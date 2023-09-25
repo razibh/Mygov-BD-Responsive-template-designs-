@@ -1,0 +1,294 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  position: fixed;
+  z-index: 1000;
+  width: 90%;
+}
+nav ul{
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  
+}
+nav ul li{
+  position: relative;
+  display: inline-block;
+  line-height: 60px;
+ 
+}
+nav ul li a{
+  position: relative;
+  color: rgb(236, 243, 239);
+  font-size: 17px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  background-color: #198754;
+  letter-spacing: 3px;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: rgb(13, 12, 12);
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 300px;
+    background: #111211;
+    top: 10px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 20px ;
+    padding: 10px;
+    line-height: 10px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+/* End Navbar  */
+
+input{
+  align-items: center;
+  border-radius: 12px;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+.search{
+  width: 400px;
+  height: 30px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.colordiv{
+  width: 100%;
+  height: 1rem;
+  background-color: aquamarine;
+}
+
+.division{
+ 
+  background-color: #41e498;
+}
+.divisionStyle{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+border-radius: 12px;
+}
+/* End count number */
+
+
+
+
+.phone_right{
+  text-align: right;
+  
+}
+.btnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.btn{
+    color: #198754;
+    border: 1px solid;
+    border-radius: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
+    /* margin-left: 250px; */
+    
+}
+.btn1{
+    color: #198754;
+    border: 1px solid;
+    border-radius: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 10px;
+    padding: .375rem 0.75rem;
+    
+    
+}
+ .btn:hover{
+    color: white;
+    background-color: #198754;
+}
+.btn1:hover{
+    color: white;
+    background-color: #198754;
+}
+.btnR2{
+    display:block;
+
+    color: black;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 0px;
+    padding: 2rem;
+}
+.btnR2:hover{
+    color:#198754;
+}
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    /* Add styles for individual grid items */
+    background-color: white;
+    border-radius: 9px;
+    border: 5px solid whitesmoke;
+    padding: 20px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+  }
+
+
+  /* End Card view */
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    
+}
+
+.grid-item1 {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.grid-item1 p{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container1 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+/*service end */
+.titl h2{
+  margin-top: 2rem;
+}
+/* tutitrial btn */
+#btnB{
+  background-color: #41e498;
+  color: white;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+.grid-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.grid-item3 {
+  flex: 1;
+margin-left: 5rem;
+  min-width: 300px;
+  max-width: calc(50% - 20px);
+ background-color: white;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.grid-item3 img {
+  background-color: seagreen;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+.item3{
+  margin-top: 5rem;
+  text-align: left;
+}
+/* banner */
+.banner{
+background-color: #41e498;
+margin-top: 1rem;
+border-radius: 12px;
+
+}
+.banner1{
+  margin-top: -4.5rem;
+}
+#navbarDropdown{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* footer */
+.text-reset{
+  text-decoration: none;
+}
+.ftext{
+  text-decoration: none;
+}
